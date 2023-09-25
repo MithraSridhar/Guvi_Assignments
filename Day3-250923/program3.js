@@ -9,9 +9,9 @@ var jsonLength = parsedJson.length
 
 
 for(var i =0 ;i<jsonLength ;i++){
-    console.log(parsedJson[i].name) 
-    console.log(parsedJson[i].region) 
-    console.log(parsedJson[i].subregion) 
-    console.log(parsedJson[i].population) 
+    console.log("Country name is",parsedJson[i].name.common) 
+    console.log("Region is",parsedJson[i].region) 
+    console.log("Sub-region is",parsedJson[i].subregion) 
+    console.log("Population is",parsedJson[i].population) 
 }
 
