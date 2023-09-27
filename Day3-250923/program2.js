@@ -1,5 +1,5 @@
 
-//var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+//let XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 let xhr=new XMLHttpRequest();
 xhr.open("Get","https://restcountries.com/v3.1/all",true)
 
