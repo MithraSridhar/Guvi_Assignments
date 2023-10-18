@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey-Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .flex-container label:after {
+             content:"*";
+             color: red;           
+            }
+            .name-container{
+                display: flex;
+                flex-direction: row;
+            }
+            .checked {
+                color: orange;
+            }
+           tr, td{
+                padding-top: 5px;
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-bottom: 5px;
+                text-align: center; 
+                white-space: nowrap;
+            }
+            table{
+                border: 0px;
+            }
+            tr:nth-child(even) {
+                background-color: #F1F1F1;
+            }
+            textarea{
+                width: 821px;
+                height: 116px;
+                border: 1px solid #E4E4E4;
+            }
+            button{
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-right: 10px;
+                padding-left: 10px;
+            }
+            #firstname{
+                border: 1px solid #E4E4E4;
+            }
+            #lastname{
+                border: 1px solid #E4E4E4;
+            }
+            #email{
+                border: 1px solid #E4E4E4;
+                width: 35%;
+            }
+           
+    </style>
+</head>
+<body>
+   <div class="flex-container">
+   <b> <label for="name"> Name </label></b>
+
+    <div class="name-container">
+
+        <div class="firstname" style="padding-right:10px;">
+        <input id="firstname" type="text" />
+        <br/>
+        <span>First</span>
+        </div>
+
+        <div class="lastname">
+        <input id="lastname" type="text" /><br/>
+        <span>Last</span>
+        </div>
+
+    </div>
+<br/>
+ <b><label for="name"> Email </label></b>
+     <div class="email-container">
+        <div class="email">
+            <input id="email" type="text" /><br/>
+        </div>
+     </div>
+     <br/>
+<b><label for="name"> Your Experince </label></b>
+
+     <div class="experience-container">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span> <br/>
+        <br/>
+        <span>Overall how would you rate your experience with us?</span>
+     </div>
+     <br/>
+<b><label for="name">How satisfied are you with</label></b>
+     <div class="satisfied-container">
+        <table>
+            <tr>
+                <td></td>
+                <td>Very Unsatisfied</td>
+                <td>Unsatisfied</td>
+                <td>Neutral</td>
+                <td>Satisfied</td>
+                <td>Very Satisfied</td>
+            </tr>
+            <tr>          
+                <td style="text-align: left;width: 5%;">Purchase</td>
+                <td><input type="radio"/></td>
+                <td><input type="radio"/></td>
+                <td><input type="radio"/></td>
+                <td><input type="radio"/></td>
+                <td><input type="radio"/></td>
+            </tr>
+            <tr>          
+                <td style="text-align: left;width:  5%;">Service</td>
+                <td><input type="radio"/></td>
+                <td><input type="radio"/></td>
+                <td><input type="radio"/></td>
+                <td><input type="radio"/></td>
+                <td><input type="radio"/></td>
+            </tr>
+            <tr>          
+                <td style="text-align: left;width:  5%;">Company Overall</td>
+                <td><input type="radio"/></td>
+                <td><input type="radio"/></td>
+                <td><input type="radio"/></td>
+                <td><input type="radio"/></td>
+                <td><input type="radio"/></td>
+            </tr>
+        </table>   
+     </div>
+     <br/>
+<b><label for="name">How likely are you to</label></b>
+     <div class="likely-container">
+        <table>
+            <tr>
+                <td></td>
+                <td>Very Unlikely</td>
+                <td>Unlikely</td>
+                <td>Neutral</td>
+                <td>Likely</td>
+                <td>Very Likely</td>
+            </tr>
+            <tr>          
+                <td style="text-align: left;width: 10%;">Buy from us again</td>
+                <td><input type="radio"/></td>
+                <td><input type="radio"/></td>
+                <td><input type="radio"/></td>
+                <td><input type="radio"/></td>
+                <td><input type="radio"/></td>
+            </tr>
+            <tr>          
+                <td style="text-align: left; text-wrap: wrap;width: 10%;">Recommand our product to others</td>
+                <td><input type="radio"/></td>
+                <td><input type="radio"/></td>
+                <td><input type="radio"/></td>
+                <td><input type="radio"/></td>
+                <td><input type="radio"/></td>
+            </tr>
+            <tr>          
+                <td style="text-align: left; text-wrap: wrap;width: 10%;">Recommand our company to others</td>
+                <td><input type="radio"/></td>
+                <td><input type="radio"/></td>
+                <td><input type="radio"/></td>
+                <td><input type="radio"/></td>
+                <td><input type="radio"/></td>
+            </tr>
+        </table>   
+     </div>
+    <b><p>Additional comments or suggestions</p></b>
+    <textarea rows="4" cols="100"> </textarea>
+       <br/> 
+    <button type="submit">Submit</button>
+   </div>
+    
+</body>
+</html>
